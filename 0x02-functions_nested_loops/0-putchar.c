@@ -7,7 +7,10 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _putchar(str c)
+
+char c[6] = {"%s/n", _putchar}
+
+int _putchar(c)
 {
 return (write(1, c, 1));
 }
