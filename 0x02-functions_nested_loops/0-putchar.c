@@ -8,7 +8,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-char c[6] = {"%s/n", _putchar}
+char c[6] = {"_putchar"}
 
 int _putchar(c)
 {
@@ -23,7 +23,7 @@ return (write(1, c, 1));
 
 int main(void)
 {
-_putchar("_putchar");
+_putchar(c);
 return (0);
 
 }
