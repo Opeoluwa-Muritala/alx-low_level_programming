@@ -8,7 +8,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-char c[6] = {"_putchar"};
+char c[8] = {"_","p","u","t","c","h","a","r"};
 
 int _putchar(c)
 {
