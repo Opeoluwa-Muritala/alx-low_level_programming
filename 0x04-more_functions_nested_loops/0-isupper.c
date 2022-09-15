@@ -14,7 +14,6 @@
 
 int _isupper(int c)
 {
-int c
 if (c >= 65 && c <= 90)
 {
 return (1);
@@ -25,17 +24,4 @@ return (0);
 }
 }
 
-/**
- * main - run the program
- *
- * Description - return 1 if uppercase
- * return 0 if lowercase
- *
- * RETURN:1
- *
- */
 
-int main(void)
-{
-_isupper();
-}
