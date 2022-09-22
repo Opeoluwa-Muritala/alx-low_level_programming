@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strcat: This uses dest to return a string over src
- * As simple as abc
+ * _strcat - This uses dest to return a string over src
+ *
  *
  * @dest: Ovewriting nul byte at the end
  * @src: Appends string to dest
