@@ -11,9 +11,9 @@ void _print_rev_recursion(char *s)
 {
 if (*s)
 {
-s = strrev(*s);
-_putchar(s);
-_print_rev_recursion(s);
+strrev(*s);
+_putchar(*s);
+_print_rev_recursion(s + 1);
 }
 else
 {
