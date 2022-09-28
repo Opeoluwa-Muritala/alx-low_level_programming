@@ -14,5 +14,9 @@ if (y < 0)
 {
 return (-1);
 }
-return (_pow_recursion(x, y));
+if (y == 0)
+{
+return (1);
+}
+return (_pow_recursion(x, y - 1));
 }
