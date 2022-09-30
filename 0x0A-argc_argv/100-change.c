@@ -11,7 +11,7 @@
  */
 int coinConverter(int i)
 {
-	int count;
+	int count = 0;
 
 	while (i != 0)
 	{
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 {
 	int i, coin;
 
-	coin = 0;
+	coin;
 
 	if (argc != 2)
 	{
