@@ -49,8 +49,6 @@ int main(int argc, char *argv[])
 {
 	int i, coin;
 
-	coin;
-
 	if (argc != 2)
 	{
 		printf("Error\n");
