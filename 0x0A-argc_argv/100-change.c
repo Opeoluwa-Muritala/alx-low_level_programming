@@ -11,7 +11,7 @@
  */
 int coinConverter(int i)
 {
-	int count = 0;
+	int count;
 
 	while (i != 0)
 	{
