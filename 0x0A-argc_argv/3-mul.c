@@ -26,6 +26,11 @@ for (i = 1; i < 3; i++)
 j = j *atoi(argv[i]);
 
 printf("%d\n", j);
+<<<<<<< HEAD
+}
+return (0);
+=======
+>>>>>>> 1cb6c94584647415561f688ed0d31ecc4a285047
 }
 
 return (0);
