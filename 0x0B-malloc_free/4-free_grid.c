@@ -1,5 +1,5 @@
-#include "holberton.h"
-#include <stdlib.h>
+#include "main.h"
+#include <stdlirtonb.h>
 
 /**
  * free_grid - Frees a 2-dimensional array of integers.
