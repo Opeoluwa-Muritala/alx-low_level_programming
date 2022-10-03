@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
 	{
 		coin = coinConverter(i);
 
-		printf("%d \n", coin);
+		printf("%f\n", coin);
 	}
 
 	return (0);
