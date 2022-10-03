@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlirtonb.h>
+#include <stdlir.h>
 
 /**
  * free_grid - Frees a 2-dimensional array of integers.
