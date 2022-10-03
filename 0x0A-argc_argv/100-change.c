@@ -11,7 +11,7 @@
  */
 int coinConverter(int i)
 {
-	int cents = 0;
+	int count = 0;
 
 	while (i != 0)
 	{
@@ -24,19 +24,19 @@ int coinConverter(int i)
 		else if (i % 5 == 0)
 			i -= 5;
 			else if (i % 2 == 0)
-		
+		{
 			if (i % 10 == 6)
 				i -= 1;
 			else
 				i -= 2;
-		
+		}
 		else
 			i -= 1;
 
-		cents++;
+		count++;
 	}
 
-	return (cents);
+	return (count);
 }
 
 /**
@@ -49,8 +49,6 @@ int main(int argc, char *argv[])
 {
 	int i, coin;
 
-	coin = 0;
-
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -60,8 +58,9 @@ int main(int argc, char *argv[])
 	i = atoi(argv[1]);
 
 	if (i < 0)
+	{
 		printf("0\n");
-
+	}
 	else
 	{
 		coin = coinConverter(i);
