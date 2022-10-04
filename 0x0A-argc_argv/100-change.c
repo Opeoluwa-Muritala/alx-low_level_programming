@@ -16,7 +16,7 @@
 int main(int argc, char *argv[])
 {
 int j, change, cents;
-int coins[] = {25, 10, 5, 2, 1};
+int coins[5] = {25, 10, 5, 2, 1};
 
 if (argc != 2)
 {
@@ -37,10 +37,14 @@ for (j = 0; j < 5 && change >= 0; j++)
 {
 while (change >= coins[j])
 {
-cents++;
+
+cents = cents + 2;
+
 change =change - *coins;
 }
+
 }
+cents -=1;
 printf("%d\n", cents);
 return (0);
 }
