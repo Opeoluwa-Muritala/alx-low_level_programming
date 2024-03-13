@@ -1,27 +1,22 @@
-; My comments: It is so fun to write in assembly language
-; File: 101-hello_holberton.asm
-; Auth: Firdaus H. Salim
-; Desc: 64-bit assembly program that prints
-;       Hello, Holberton followed by a new line.
+; Declare needed C  functions
+	extern	printf		; the C function, to be called
 
-extern printf
+	section .data		; Data section, initialized variables
+msg:	db "Hello, Holberton", 0; C string needs 0
+fmt:	db "%s", 10, 0		; The printf format, "\n",'0'
 
-section .text
-   global main
+	section .text		; Code section.
 
-main:
-   push rbp
+	global main		; the standard gcc entry point
+main:				; the program label for the entry point
+	push	rbp		; set up stack frame, must be alligned
 
-   mov rdi,fmt
-   mov rsi,msg
-   mov rax,0
-   call printf
+	mov	rdi,fmt
+	mov	rsi,msg
+	mov	rax,0		; or can be  xor  rax,rax
+	call	printf		; Call C function
 
-   pop rbp
+	pop	rbp		; restore stack
 
-   mov rax,0
-   ret
-
-section .data
-   msg: db "Hello, Holberton", 0
-   fmt: db "%s", 10, 0
+	mov	rax,0		; normal, no error, return value
+	ret			; return
